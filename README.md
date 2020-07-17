@@ -21,7 +21,7 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
  ### STM32CubeMX setup
 * In STM32CubeMX, setup I2C1 to "I2C" and USART1 to "Asynchronous"
 * Setup an external interrupt pin (say PB0) in GPIO settings, use "external interrupt mode with falling edge trigger detection" and "pull-up" settings.
-* Activiate the external interrupt in NVIC settings by checking the corresponding box.
+* Activate the external interrupt in NVIC settings by checking the corresponding box.
 * Connect the INT# pin of your MAX30100 to this external interrupt pin.
 * Save and generate code.
 
@@ -52,7 +52,7 @@ MAX30100_InterruptCallback();
 * Read the results from a UART monitor/plotter.
 * Refer to [`./examples`](./examples) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
 
-### Pausing, resuming and stoping measurements
+### Pausing, resuming and stopping measurements
 * You may use the following:
 ```ruby
 void MAX30100_Stop(void);
