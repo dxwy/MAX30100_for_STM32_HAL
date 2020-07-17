@@ -53,7 +53,7 @@ MAX30100_InterruptCallback();
 * Refer to [`./examples`](./examples) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
 
 ## Sidenote
-* If you're using an MAX30100 module and it cannot be detected by the microcontroller, removing the pull-up resistors on the module may resolve the problem. Details [here](https://www.teachmemicro.com/max30100-arduino-heart-rate-sensor/).
+* If you're using an MAX30100 module and it cannot be detected by the microcontroller, desoldering the pull-up resistors on the module may resolve the problem. Details [here](https://www.teachmemicro.com/max30100-arduino-heart-rate-sensor/).
 
 ## Known issues
 * Nil.
