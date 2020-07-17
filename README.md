@@ -59,8 +59,6 @@ void MAX30100_Stop(void);
 void MAX30100_Pause(void);
 void MAX30100_Resume(void);
 ```
-## Sidenote
-* If you're using an MAX30100 module and it cannot be detected by the microcontroller, desoldering the pull-up resistors on the module may resolve the problem. Details [here](https://www.teachmemicro.com/max30100-arduino-heart-rate-sensor/).
 
 ## Known issues
-* Nil.
+* If you're using an MAX30100 module and it cannot be detected by the microcontroller, desoldering the pull-up resistors on the module may resolve the problem. Details [here](https://www.teachmemicro.com/max30100-arduino-heart-rate-sensor/).
