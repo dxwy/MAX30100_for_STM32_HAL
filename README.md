@@ -3,7 +3,7 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 
 **This library is ***NOT*** intended for clinical use. Proceed at your own risk**.
 
-![Data read from MAX30100](./examples/puls.bmp)
+![Data read from MAX30100](./examples/example_heart_rate.bmp)
 
 ## To test
 * Minimal setup:
@@ -56,4 +56,4 @@ MAX30100_InterruptCallback();
 * If you're using an MAX30100 module and it cannot be detected by the microcontroller, removing the pull-up resistors on the module may resolve the problem. Details [here](https://www.teachmemicro.com/max30100-arduino-heart-rate-sensor/).
 
 ## Known issues
-* No known issues yet.
+* Nil.
