@@ -1,6 +1,7 @@
 # MAX30100_for_STM32_HAL
 An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sensor. 
-**NOT** for clincal use.
+
+**This library is ***NOT*** intended for clinical use. Proceed at your own risk**.
 
 ![Data read from MAX30100](./examples/puls.bmp)
 
