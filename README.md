@@ -36,7 +36,7 @@ MAX30100_Init(&hi2c1, &huart1);
 MAX30100_SetSpO2SampleRate(MAX30100_SPO2SR_DEFAULT);
 MAX30100_SetLEDPulseWidth(MAX30100_LEDPW_DEFAULT);
 MAX30100_SetLEDCurrent(MAX30100_LEDCURRENT_DEFAULT, MAX30100_LEDCURRENT_DEFAULT);
-MAX30100_SetMode(MAX30100_HRONLY_MODE);
+MAX30100_SetMode(MAX30100_SPO2_MODE);
  ```
  ### Interrupt Service Routine
 * In `stm32f*xx_it.c` (interrupt service routines file), include [`max30100_for_stm32_hal.h`](./max30100_for_stm32_hal.h).
