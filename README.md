@@ -28,7 +28,7 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 ### Main Program
 * In `main.c` (main program body file), include [`max30100_for_stm32_hal.h`](./max30100_for_stm32_hal.h).
 * In `main.c`, before the main loop and after the system inits, add the following lines:
- ```
+ ```ruby
 MAX30100_Init(&hi2c1, &huart1);
 MAX30100_SetSpO2SampleRate(MAX30100_SPO2SR_DEFAULT);
 MAX30100_SetLEDPulseWidth(MAX30100_LEDPW_DEFAULT);
@@ -39,11 +39,11 @@ MAX30100_SetMode(MAX30100_HRONLY_MODE);
  ### Interrupt Service Routine
 * In `stm32f*xx_it.c` (interrupt service routines file), include [`max30100_for_stm32_hal.h`](./max30100_for_stm32_hal.h).
 * In `stm32f*xx_it.c`, add the line between private user functions tags:
-```
+```ruby
 extern void MAX30100_InterruptCallback(void);
 ```
 * In the corresponding interrupt handler function, add the line:
-```
+```ruby
 MAX30100_InterruptCallback();
 ```
 * Complie and flash `main.c` to microcontroller.
