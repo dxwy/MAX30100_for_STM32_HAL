@@ -8,14 +8,14 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 ## To test
 * Minimal setup:
 ```
-                                                   _____________
-                                          VDD 1 --|             |
-                                         SCL1 2 --|             |
-                                         SDA1 3 --|   __        |
-                                         #INT 4 --|  |__|       |
-                                          N/C 5 --|  |O |       |
-                                          N/C 6 --|  |__|       |
-                                          GND 7 --|_____________|  
+                                                           _____________
+                                                  VDD 1 --|             |
+                                                 SCL1 2 --|             |
+                                                 SDA1 3 --|   __        |
+                                                 #INT 4 --|  |__|       |
+                                                  N/C 5 --|  |O |       |
+                                                  N/C 6 --|  |__|       |
+                                                  GND 7 --|_____________|  
                                    
  ```
  ### STM32CubeMX setup
