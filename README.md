@@ -6,7 +6,7 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 ![Data read from MAX30100](./examples/example_heart_rate.bmp)
 
 ## Quick start
-### Minimal setup:
+### Minimal setup
 ```
                                                      _____________
                                             VDD 1 --|             |
