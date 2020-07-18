@@ -54,7 +54,7 @@ extern void MAX30100_InterruptCallback(void);
 ```ruby
 MAX30100_InterruptCallback();
 ```
-* Complie and flash `main.c` to microcontroller.
+* Complie and flash program to microcontroller.
 * Read the results from a UART monitor/plotter.
 * Refer to [./examples](./examples) ([`main.c`](./examples/main.c), [`stm32f0xx_it.c`](./examples/stm32f0xx_it.c)) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
 
