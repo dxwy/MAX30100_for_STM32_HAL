@@ -50,14 +50,14 @@ MAX30100_InterruptCallback();
 ```
 * Complie and flash `main.c` to microcontroller.
 * Read the results from a UART monitor/plotter.
-* Refer to [`./examples`](./examples) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
+* Refer to [./examples](./examples) ([`main.c`](./examples/main.c), [`stm32f0xx_it.c`](./examples/stm32f0xx_it.c)) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
 
 ### Pausing, resuming and stopping measurements
 * You may use the following:
 ```ruby
-void MAX30100_Stop(void);
 void MAX30100_Pause(void);
 void MAX30100_Resume(void);
+void MAX30100_Stop(void);
 ```
 
 ## Known issues
