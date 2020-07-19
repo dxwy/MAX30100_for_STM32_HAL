@@ -8,6 +8,7 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 ## Quick start
 ### Minimal setup
 ![Setup of MAX30100](./examples/images/minimal_connections.bmp)
+<!--[](#known-issues)-->
 
 ### STM32CubeMX setup
 * In STM32CubeMX, set I2C1 to "I2C" and USART1 to "asynchronous"
