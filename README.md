@@ -3,22 +3,13 @@ An STM32 HAL library written for the MAX30100 pulse oximeter and heart rate sens
 
 **This library is ***NOT*** intended for clinical use. Proceed at your own risk**.
 
-![Data read from MAX30100](./examples/example_heart_rate.bmp)
+![Data read from MAX30100](./examples/images/example_heart_rate.bmp)
 
 ## Quick start
 ### Minimal setup
-```
-                                                     _____________
-                                            VDD 1 --|             |
-                                           SCL1 2 --|             |
-                                           SDA1 3 --|   __        |
-                                           INT# 4 --|  |__|       |
-                                            N/C 5 --|  |O |       |
-                                            N/C 6 --|  |__|       |
-                                            GND 7 --|_____________|  
-                                   
- ```
- ### STM32CubeMX setup
+![Setup of MAX30100](./examples/images/minimal_connections.bmp)
+
+### STM32CubeMX setup
 * In STM32CubeMX, set I2C1 to "I2C" and USART1 to "asynchronous"
 * Set up an external interrupt pin (say PB0) in GPIO settings, use "external interrupt mode with falling edge trigger detection" and "pull-up" settings.
 * Activate the external interrupt in NVIC settings by checking the corresponding box.
