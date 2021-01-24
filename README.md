@@ -51,7 +51,6 @@ MAX30100_InterruptHandler();
 * Refer to [./examples](./examples) ([`main.c`](./examples/main.c), [`stm32f0xx_it.c`](./examples/stm32f0xx_it.c)) and [datasheets](https://www.maximintegrated.com/en/products/sensors/MAX30100.html) for further information.
 
 ### Pausing, resuming and stopping measurements
-* You may use the following:
 ```ruby
 void MAX30100_Pause(void);
 void MAX30100_Resume(void);
