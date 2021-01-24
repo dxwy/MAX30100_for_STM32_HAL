@@ -43,7 +43,7 @@ void MAX30100_EnableInterrupt(uint8_t a_full, uint8_t tmp_rdy, uint8_t hr_rdy, u
 	MAX30100_WriteReg(MAX30100_INTERRUPT_ENB, itReg);
 }
 
-void MAX30100_InterruptCallback(void){
+void MAX30100_InterruptHandler(void){
 	uint8_t itReg = MAX30100_ReadReg(MAX30100_INTERRUPT);
 	if((itReg >> MAX30100_A_FULL) & 0x01){
 		MAX30100_ReadFIFO();

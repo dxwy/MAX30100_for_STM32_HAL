@@ -109,7 +109,7 @@ uint8_t MAX30100_ReadReg(uint8_t regAddr);
 void MAX30100_WriteReg(uint8_t regAddr, uint8_t byte);
 
 void MAX30100_EnableInterrupt(uint8_t a_full, uint8_t tmp_rdy, uint8_t hr_rdy, uint8_t spo2);
-void MAX30100_InterruptCallback(void);
+void MAX30100_InterruptHandler(void);
 
 void MAX30100_SetMode(enum MAX30100_Mode mode);
 void MAX30100_SetSpO2SampleRate(enum MAX30100_SpO2SR sr);

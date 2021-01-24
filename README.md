@@ -40,11 +40,11 @@ MAX30100_SetMode(MAX30100_SPO2_MODE);
 ```
 * In `stm32f*xx_it.c`, add the line between private user functions tags:
 ```ruby
-extern void MAX30100_InterruptCallback(void);
+extern void MAX30100_InterruptHandler(void);
 ```
 * In the corresponding interrupt handler function, add the line:
 ```ruby
-MAX30100_InterruptCallback();
+MAX30100_InterruptHandler();
 ```
 * Complie and flash program to microcontroller.
 * Read the results from a UART monitor/plotter.
