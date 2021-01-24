@@ -38,11 +38,7 @@ MAX30100_SetMode(MAX30100_SPO2_MODE);
 ```ruby
 #include "max30100_for_stm32_hal.h"
 ```
-* In `stm32f*xx_it.c`, add the line between private user functions tags:
-```ruby
-extern void MAX30100_InterruptHandler(void);
-```
-* In the corresponding interrupt handler function, add the line:
+* In the corresponding interrupt handler function, call the interrupt handler:
 ```ruby
 MAX30100_InterruptHandler();
 ```
